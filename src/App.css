@@ -1,0 +1,66 @@
+.app-container {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+}
+
+.sidebar {
+  min-height: 800px;
+}
+
+.post-card {
+  margin: 20px 50px;
+}
+
+.hashtag {
+  margin: 0px 3px;
+}
+
+.reactions {
+  margin: 15px 0 0 0;
+}
+
+.create-post {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+
+.hero-image {
+  width: 80px; /* Keep the same width */
+  height: 80px; /* Keep the same height */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+  /* 3D Effect */
+  transform: perspective(500px) rotateX(10deg) rotateY(10deg);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
+              -5px -5px 15px rgba(255, 255, 255, 0.2);
+  
+  /* Soft Reflection */
+  background: linear-gradient(to top left, rgba(255, 255, 255, 0.3), transparent);
+  border-radius: 10px;
+}
+
+.hero-image:hover {
+  transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale(1.1);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pricing{
+  font-size: 60px
+}
+
+.price-tagline{
+  font-size: 30px;
+}
+
+.pricing-container{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pricing-headline{
+  margin: 30px 0;
+}
